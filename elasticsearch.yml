@@ -30,11 +30,13 @@ cluster.name: my-application
 #
 # Path to directory where to store the data (separate multiple locations by comma):
 #
-${path.data}
+
 #
 # Path to log files:
 #
-${path.logs}
+path:
+  logs: /var/log/elasticsearch
+  data: /var/data/elasticsearch
 #
 # ----------------------------------- Memory -----------------------------------
 #
