@@ -34,9 +34,8 @@ cluster.name: my-application
 #
 # Path to log files:
 #
-path:
-  logs: /var/log/elasticsearch
-  data: /var/data/elasticsearch
+path.data: /var/lib/elasticsearch
+path.logs: /var/log/elasticsearch
 #
 # ----------------------------------- Memory -----------------------------------
 #
@@ -67,7 +66,7 @@ network.host: 0.0.0.0
 # Pass an initial list of hosts to perform discovery when this node is started:
 # The default list of hosts is ["127.0.0.1", "[::1]"]
 #
-discovery.seed_hosts: ["host"]
+discovery.seed_hosts: ["0.0.0.0"]
 #
 # Bootstrap the cluster using an initial set of master-eligible nodes:
 #
